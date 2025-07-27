@@ -1,12 +1,46 @@
-<html>  
-    <head> 
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title> home page</title>
-    </head>     
-     <body>  
-        <h1>  page title </h1> 
-         <p> 
-            page description 
-         </p>   
-    </body> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="slogo.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+</head>
+<body>
+    
+    <form>
+        <img src="slogo.jpg" alt="Logo" class="logo" width="200" height="200">
+        <h2 id="header">Student Registration</h2>
+
+        <label for="name" class="lable">Full name : </label>
+        <input type="text" placeholder="Enter your full name" id="name" name="fn" required autofocus> <br><br>
+        <label for="email" class="lable">E-mail : </label>
+        <input type="email" placeholder="Enter your email" id="email" name="mail" required> <br><br>
+        <label for="date" class="lable">Date of Birth : </label>
+        <input type="date" id="date" name="dt" required> <br><br>
+        <label for="uname" class="lable">Set Username  : </label>
+        <input type="text" placeholder="Enter a user name" id="uname" name="un" required> <br><br>
+        <label for="password" class="lable">Set Password  : </label>
+        <input type="password" placeholder="Enter a 6-digit or less password" id="password" name="pass" required size="25" maxlength="6"> <br><br>
+        <label for="gender">Gender</label>  
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male" class="lable">Male</label> 
+        <input type="radio" id="female" name="gender" value="female"> 
+        <label for="female" class="lable">Female</label> <br><br>
+        <label for="course" class="lable">Course : </label>
+        <select id="course" name="course" required>
+            <option value="cse">CSE</option>
+            <option value="llb">LLB</option>
+            <option value="eee">EEE></option>
+            <option value="english">ENGLISH</option>
+        </select>    
+        <br><br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
 </html>
+

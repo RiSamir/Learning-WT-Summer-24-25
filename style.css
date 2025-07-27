@@ -1,7 +1,22 @@
-h1 {
-    color: red;
-}
+ form {
+            width: 400px;
+            margin: 0 auto;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color:lightblue;
+            .logo {
+               align-self: center;
+            }
+        #header {
+            text-align: center;
+            color: #333;    
+        }
+        .label {
+            font-weight: bold;
+            
+        }
+    }
 
-p {
-    font-style: italic
-}
+
+    
